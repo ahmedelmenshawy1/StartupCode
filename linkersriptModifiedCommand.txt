@@ -1,0 +1,5 @@
+#startup and linker script
+avr-gcc -g -mmcu=atmega32 -nostdlib -o avr.elf -T ModifiedLinker.x  main.c startup.s 
+
+#linker script
+avr-gcc -g -mmcu=atmega32 -o avr.elf -T ModifiedLinker.x  main.c 
